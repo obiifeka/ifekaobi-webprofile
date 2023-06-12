@@ -1,20 +1,18 @@
-  var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-  var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-    return new bootstrap.Dropdown(dropdownToggleEl)
-  })
+  // JavaScript to handle the click event and add/remove the active class
+  document.addEventListener('DOMContentLoaded', function() {
+    var header = document.getElementById('myHeader');
+    var navItems = header.getElementsByClassName('nav-item');
 
-  const leadForm = document.getElementById('lead-form');
-  const submitButton = leadForm.querySelector('button[type="submit"]');
-  
-  submitButton.addEventListener('click', function(event) {
-    if (!leadForm.checkValidity()) {
-      event.preventDefault();
-      submitButton.classList.add('btn-slide');
-      setTimeout(function() {
-        submitButton.classList.remove('btn-slide');
-      }, 1000);
+    // Add click event listener to each nav-item
+    for (var i = 0; i < navItems.length; i++) {
+      navItems[i].addEventListener('click', function() {
+        // Remove the active class from all nav-items
+        for (var j = 0; j < navItems.length; j++) {
+          navItems[j].classList.remove('active');
+        }
+        
+        // Add the active class to the clicked nav-item
+        this.classList.add('active');
+      });
     }
   });
-
-  
-  

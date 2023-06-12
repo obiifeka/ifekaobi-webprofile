@@ -15,6 +15,60 @@
  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">-->
  {% endblock %}
 
+ <style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+
+
   <!-- JavaScript libraries -->
   {% block JavaScript %}
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -22,52 +76,26 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap JavaScript plugins -->
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/ifekaobi.js') }}"></script>
+
   {% endblock JavaScript %}
 
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-
-    .container {
-      min-height: 100%;
-      max-width: 800px; 
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Align container vertically in the center */
-      align-items: center; /* Align container horizontally in the center */
-    }
- 
-
-.row {
-  margin-bottom: 1rem; /* Add margin below each row */
-}
-    h2 {
-  font-size: 1.5rem; /* Increase the font size of heading */
-  margin-bottom: 0.5rem; /* Add some spacing below heading */
-}
-
-    p {
-  margin-bottom: 0.5rem; /* Add some spacing below paragraphs */
-}
-
-   
-  </style>
+  
 </head>
 
-<body class="bg-dark" style="padding-top: 80px; zoom: 100%;">
+<body class="bg-light" style="padding-top: 100px; zoom: 100%;" >
+  
   {% include 'navbar.html' %}
 
-  <main class="container bg-light"  >
-  <div>    
+  <main class="container bg-light">
+    <div>    
   {% block content %}
-  {% endblock content%}
+  {% endblock content %}
 </div>
 </main>
 
+
   
-  {% include 'footer.html' %}
+ {% include 'footer.html' %}
 </body>
 </html>

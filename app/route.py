@@ -18,5 +18,14 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/signin', methods=['GET', 'POST'])
+def signin():
+    if request.method == 'POST':
+        # Handle POST Request here
+        return render_template('signin.html')
+    
+    # Handle GET Request here
+    return render_template('signin.html')
+
  
   

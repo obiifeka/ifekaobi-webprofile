@@ -1,10 +1,16 @@
 {% include 'base.html' %}
 {% block content %}
+<main class="bg-light">
+  <div class="p-5 rounded text-body-emphasis bg-body-secondary" style="background-image: url('/static/assetes/full-shot-man-experiencing-virtual-reality.jpg'); background-size: cover; background-position: center;">
+    <div class="col-lg-3 px-0">
+      <h1 class="display-4 fst-italic text-white">Title of a longer featured blog post</h1>
+      <p class="lead my-3 text-white">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0 "><a href="#" class="text-body-emphasis fw-bold text-white">Continue reading...</a></p>
+    </div>
+  </div>
+  
 
-<div class="container-fluid col-xxl-8  py-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
-
- 
+<div class="container col-xxl-8  py-2">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 bg-light">
 
@@ -32,5 +38,5 @@
     </div>
   </div>
 </div>
-
+</main>
 {% endblock %}

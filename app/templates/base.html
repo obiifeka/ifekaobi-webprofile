@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/JIFtech.css') }}">-->
   <title>{{ title }}</title>
 
   {% block styles %} 
   <!--Bootstrap-icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-w..." crossorigin="anonymous">
+
   <!-- CSS stylesheet -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/ifekaobi.css') }}">
- <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/prodcard.css') }}">
  {% endblock %}
+
 
  <style>
   .bd-placeholder-img {
@@ -77,25 +83,26 @@
   <!-- Bootstrap JavaScript plugins -->
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/ifekaobi.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jiftech.js') }}"></script>
 
   {% endblock JavaScript %}
 
   
 </head>
+<body>
+  
 
-<body class="bg-light" style="padding-top: 100px; zoom: 100%;" >
   
   {% include 'navbar.html' %}
 
-  <main class="container bg-light">
-    <div>    
   {% block content %}
+  <main class="container bg-light mb-5">
+  </main>
   {% endblock content %}
-</div>
-</main>
+
 
 
   
- {% include 'footer.html' %}
+
 </body>
 </html>

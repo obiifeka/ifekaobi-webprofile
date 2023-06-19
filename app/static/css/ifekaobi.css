@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400,500,600&display=swap');
+
 .contact-col {
     background-color: #073101;
   }
@@ -11,10 +13,7 @@
     color:  #073101; /* Change the font color to your desired color */
     background-color: #fff; /* Change the background color to your desired color */
    }
-   html,
-   body {
-     height: 100%;
-   }
+ 
    
    .wrapper {
      min-height: 100%;
@@ -22,6 +21,242 @@
      flex-direction: column;
    }
    
-   .footer {
-     flex-shrink: 0;
-   }
+  
+   
+   .jiftech-text {
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .custom-card {
+    height: 510px; 
+    border-radius: 20px; /* Adjust the value to control the amount of curvature */
+    overflow: hidden; 
+    background-image: url('/static/assetes/full-shot-man-experiencing-virtual-reality.jpg');
+
+  }
+
+  .custom-image {
+    height: 350px; }
+    .custom-card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s;
+    }
+    
+    .custom-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .custom-card {
+      animation: slideIn 0.5s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s;
+    }
+    
+    .delay-1 {
+      animation-delay: 1s;
+    }
+    
+    .delay-2 {
+      animation-delay: 2s;
+    }
+    
+    .delay-3 {
+      animation-delay: 3s;
+    }
+    
+    
+    .custom-image {
+      transition: transform 0.3s;
+    }
+    
+    .custom-image:hover {
+      transform: scale(0.9);
+    }
+
+    .icon-circle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #000000;
+      color: #FFFFFF;
+      margin-right: 10px;
+    }
+    
+    .text-with-icon {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .text-with-icon h5,
+    .text-with-icon p {
+      margin: 0;
+    }
+    @media (max-width: 767px) {
+      .bg-light .p-5 {
+        padding: 2rem;
+      }
+    
+      .display-6 {
+        font-size: 1.5rem;
+      }
+    
+      .lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    
+      .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+    
+      .col-lg-7 {
+        padding: 1rem;
+      }
+    
+      .p-3 {
+        padding: 0.75rem;
+      }
+    
+      .rounded-lg-3 {
+        border-radius: 0.75rem;
+      }
+    
+      .col-xxl-8.py-2 {
+        padding: 1rem;
+      }
+    
+    
+      .custom-card.delay-2,
+      .custom-card.delay-3,
+      .custom-card.delay-1 {
+        animation-delay: 0s !important;
+      }
+    
+      .col-lg-4.offset-lg-1 {
+        margin-left: 0;
+      }
+    
+      .col-lg-4.offset-lg-1 .p-0 {
+        padding: 0;
+      }
+    
+      .img-fluid.custom-image {
+        width: 100%;
+        height: auto;
+      }
+    
+      .container.col-xxl-8 {
+        padding: 0;
+      }
+    
+      .container.col-xxl-8 > .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    
+      .container.col-xxl-8 > .row > .col-lg-6 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      .bg-light .p-5 {
+        padding: 2.5rem;
+      }
+    
+      .display-6 {
+        font-size: 2rem;
+      }
+    
+      .lead {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+    
+      .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+      }
+    
+      .col-lg-7 {
+        padding: 1.5rem;
+      }
+    
+      .p-3 {
+        padding: 1rem;
+      }
+    
+      .rounded-lg-3 {
+        border-radius: 1rem;
+      }
+    
+      .col-xxl-8.py-2 {
+        padding: 2rem;
+      }
+    
+      .card {
+        margin-bottom: 7.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .custom-card.delay-2,
+      .custom-card.delay-3,
+      .custom-card.delay-1 {
+        animation-delay: 0s !important;
+      }
+    
+      .col-lg-4.offset-lg-1 {
+        margin-left: 0;
+      }
+    
+      .col-lg-4.offset-lg-1 .p-0 {
+        padding: 0;
+      }
+    
+      .img-fluid.custom-image {
+        width: 100%;
+        height: auto;
+      }
+    
+      .container.col-xxl-8 {
+        padding: 0;
+      }
+    
+      .container.col-xxl-8 > .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    
+      .container.col-xxl-8 > .row > .col-lg-6 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .card-sub {
+      height: 240px; 
+      border-radius: 20px;
+    }
+     
+   
+   
+   

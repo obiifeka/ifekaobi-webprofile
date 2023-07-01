@@ -17,20 +17,14 @@
     }
   });
 
-  function checkInput(input) {
-    if (input.value.length > 0) {
-      input.placeholder = '';
-    } else {
-      input.placeholder = 'Search for anything..';
-    }
-  }
-  function adjustPlaceholder(input) {
-    input.classList.add('form-control-small');
-    input.placeholder = 'Search for anything..';
-  }
-
   $(document).ready(function() {
     $('.carousel').carousel({
       interval: 4000 // Autoplay interval in milliseconds (4 seconds)
     });
   });
+
+/*===Nav-link-icon */
+function toggleAbsolute() {
+  const iconLink = document.querySelector('.nav-icon-link');
+  iconLink.classList.toggle('absolute');
+}

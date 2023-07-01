@@ -1,26 +1,45 @@
-from flask import Flask
-#from flask_cors import CORS
-#from flask_wtf.csrf import CSRFProtect
-import secrets
-from flask_sqlalchemy import SQLAlchemy
-#from flask_security import SQLAlchemyUserDatastore
-#from flask_security.core import UserMixin
-#from flask_migrate import Migrate
-from .secrets import  *
+from flask import Flask,redirect,url_for,render_template,request
 
 app=Flask(__name__)
 
+@app.route('/',methods=['GET','POST'])
+def home():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('index1.html')
+    return render_template('index1.html')
 
-app.config['SECRET_KEY'] = "ryrithgo7t8ookihgkj"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'.format(db_user=db_user, db_password=db_password,db_host=db_host,db_name=db_name)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+@app.route('/register',methods=['GET','POST'])
+def register():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('register.html')
+    return render_template('register.html')
 
-db = SQLAlchemy(app)
-#migrate = Migrate(app, db)
-print(db)
-# csrf = CSRFProtect(app)
-# CORS(app)
+@app.route('/signin',methods=['GET','POST'])
+def signin():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('signin.html')
+    return render_template('signin.html')
+
+@app.route('/laptops',methods=['GET','POST'])
+def laptops():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('laptops.html')
+    return render_template('laptops.html')
+
+@app.route('/props',methods=['GET','POST'])
+def props():
+    if request.method=='POST': 
+        # Handle POST Request here
+        return render_template('props.html')
+    return render_template('props.html')
 
 
 
-from .route import * 
+
+
+
+

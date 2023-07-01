@@ -1,12 +1,7 @@
-from flask import redirect,url_for,render_template,request, Blueprint
-from  . import app
+from . import app
+from flask  import  render_template,url_for,redirect, request
 
-@app.route('/',methods=['GET','POST'])
-def home():
-    if request.method=='POST':
-        # Handle POST Request here
-        return render_template('index.html')
-    return render_template('index.html')
+
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -26,6 +21,3 @@ def signin():
     
     # Handle GET Request here
     return render_template('signin.html')
-
- 
-  

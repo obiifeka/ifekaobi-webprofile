@@ -1,108 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/JIFtech.css') }}">-->
-  <title>{{ title }}</title>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
 
-  {% block styles %} 
-  <!--Bootstrap-icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-w..." crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Features · Bootstrap v5.3</title>
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/ifekaobi.css') }}">
+     <!--Bootstrap-icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-w..." crossorigin="anonymous">
+   
+     <!-- CSS stylesheet -->
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/ifekaobi.css">
+     <link rel="stylesheet" href="/static/css/laptopcarts.css">
+   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <link rel="stylesheet" href="/static/css/prodcard.css">
+   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../assets/dist/css/foundation.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   
+   
+    
+    <!-- Custom styles for this template -->
+    <link href="/static/css/features.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/prodcard.css') }}">
- {% endblock %}
-
-
- <style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-
-  .b-example-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
-
-  .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-  }
-
-  .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
-
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-  }
-
-  .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-</style>
-
-
-  <!-- JavaScript libraries -->
-  {% block JavaScript %}
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" 
-    crossorigin="anonymous"></script>
-  <!-- Bootstrap JavaScript plugins -->
-  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/ifekaobi.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/jiftech.js') }}"></script>
-
-  {% endblock JavaScript %}
-
+   <!-- JavaScript libraries -->
   
-</head>
-<body>
-  
-
-  
-  {% include 'navbar.html' %}
-
-  {% block content %}
-  <main class="container bg-light mb-5">
-  </main>
-  {% endblock content %}
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+   integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" 
+   crossorigin="anonymous"></script>
+ <!-- Bootstrap JavaScript plugins -->
+ <script src="/static/js/bootstrap.min.js"></script>
+ <script src="/static/js/ifekaobi.js"></script>
+ <script src="/static/js/jiftech.js"></script>
+ <script src="/static/js/laptopcarts.js"></script>
 
 
+ 
 
-  
+
+  </head>
+
+  <body class="bg-light" style="padding-top: 105px; zoom: 100%;" >
+    {% include 'navBar.html' %}   
+
+    <div>
+        {% block content %}
+          <!-- Your main content goes here -->
+        {% endblock content %}
+      </div>
+
+
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

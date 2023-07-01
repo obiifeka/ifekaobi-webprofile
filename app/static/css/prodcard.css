@@ -39,6 +39,7 @@
 
  .card-sub {
   transition: background-color 0.3s;
+  height: 265px; 
 }
 
 .card-sub:hover {
@@ -57,20 +58,150 @@
   margin-bottom: 10px; /* Adjust the desired space between the text and the image */
 }
 .sub-card {
-  background-color:white; /* Set the desired background color */
+  background-color:rgb(255, 255, 255); /* Set the desired background color */
   transition: background-color 0.3s;
-  height: 510px; 
   border-radius: 20px; /* Adjust the value to control the amount of curvature */
 }
 
 .sub-card:hover {
-  background-color: #2dad5e; /* Set the desired hover background color */
+  background-color: #ffffff; /* Set the desired hover background color */
 }
-.sub-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .sub-card:hover .card-text {
   color: white; /* Replace with the desired hover text color */
+}
+.sub-card1{
+  background-color:white; /* Set the desired background color */
+  transition: background-color 0.3s; 
+  border-radius: 20px; /* Adjust the value to control the amount of curvature */
+}
+
+.sub-card1:hover {
+  background-color: #000000; /* Set the desired hover background color */
+}
+
+.sub-card1:hover .card-text {
+  color: white; /* Replace with the desired hover text color */
+}
+
+.sub-card23:hover .card-text {
+  color: white; /* Replace with the desired hover text color */
+}
+.sub-card23{
+  background-color:white; /* Set the desired background color */
+  transition: background-color 0.3s;
+  border-radius: 20px; /* Adjust the value to control the amount of curvature */
+}
+
+.sub-card23:hover {
+  background-color: #648cfa; /* Set the desired hover background color */
+}
+
+/*===== topdeals-card*/
+.custom-card { 
+  border-radius: 20px; /* Adjust the value to control the amount of curvature */
+  overflow: hidden; 
+  background-image: url('/static/assetes/full-shot-man-experiencing-virtual-reality.jpg');
+
+}
+
+
+.custom-image {
+  height: 350px; }
+  .custom-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .custom-card {
+    animation: slideIn 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    height: 400px;
+  }
+  .custom-card.delay-2,
+  .custom-card.delay-3,
+  .custom-card.delay-1 {
+    animation-delay: 0s !important;
+  }
+  
+ 
+
+
+  .delay-1 {
+    animation-delay: 1s;
+  }
+  
+  .delay-2 {
+    animation-delay: 2s;
+  }
+  
+  .delay-3 {
+    animation-delay: 3s;
+  }
+  
+  
+  .custom-image {
+    transition: transform 0.3s;
+  }
+  .img-fluid.custom-image {
+    width: 100%;
+    height: auto;
+  }
+  .custom-image:hover {
+    transform: scale(0.9);
+  }
+/* ====productcard-text*/
+.card-text.text-primary {
+  border-bottom: none;
+}
+/*=== PHONE-MAINCARD-HD*/
+.image-hover {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .image- {
+  opacity: 0;
+}
+
+.image-container:hover .image-hover {
+  opacity: 1;
+}
+
+/*=== LAPTOP-MAINCARD-HD*/
+.card-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.write-up {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: height 0.5s ease, background-color 0.5s ease;
+}
+
+.card:hover .write-up {
+  height: 170px; /* Adjust the height as needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Reduced opacity background color */
+  color: white;
 }

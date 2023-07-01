@@ -1,47 +1,52 @@
-<header id="myHeader">
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-print-none">
-    <div class="container-fluid  col-xxl-8 fw-bold">
-      <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none jiftech-text " href="{{url_for('home')}}">JIFTECH</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="position-absolute top-0 end-0" style="font-weight:bold; margin-right:8em;">
-        <span class="fw-lighter rounded-pill text-muted">
-            &copy; copyright <span class="flask-moment" data-timestamp="2023-06-10T08:57:31Z" data-function="format" data-format="YYYY" data-refresh="0" style="display: none">2023-06-10T08:57:31Z</span>
-            &nbsp;&nbsp;
-            ver: 0.9
-        </span>
-</div>
-      <div class="collapse navbar-collapse justify-content-end py-3 " id="navbar1">
-        <ul class="navbar-nav ml-auto gap-2 d-md-flex justify-content-md-middle" style="color: #073101;">
-
-         <!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <div class="input-group">
-              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search for anything.." aria-label="Search" onfocus="clearPlaceholder(this)">
-              <button class="btn btn-outline-dark" type="button" aria-label="Search">
-                <i class="bi bi-search"></i>
-                <span class="visually-hidden">Search</span>
-              </button>
-            </div>
-          </form>--> 
-          <li class="nav-item">
-            <a href="/" class="nav-link" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('signin')}}">Sign in</a>
-          </li>
-        </ul>
-        
+         
+    <header id="myHeader">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-print-none">
+          <div class="container-fluid  col-xxl-8 fw-bold">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none jiftech-text " href="/">JIFTECH
+              <img class="img-fluid"   style="border-radius: 1rem 0 0 1rem;"  width="70" src="/static/assets/images/ficx_logo.png" alt="logo"/>
+              <span class="h1 fw-bold mb-0"></span>
+            </a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="position-absolute top-0 end-0" style="font-weight:bold; margin-right:8em;">
+              <span class="fw-lighter rounded-pill text-muted">
+                  &copy; copyright <span class="flask-moment" data-timestamp="2023-06-10T08:57:31Z" data-function="format" data-format="YYYY" data-refresh="0" style="display: none">2023-06-10T08:57:31Z</span>
+                  &nbsp;&nbsp;
+                  ver: 0.9
+              </span>
       </div>
-    </div>
-  </nav>
-
+            <div class="collapse navbar-collapse justify-content-end py-3 " id="navbar1">
+              <ul class="navbar-nav ml-auto gap-2 d-md-flex justify-content-md-middle" style="color: #073101;">
+      
+               <!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <div class="input-group">
+                    <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search for anything.." aria-label="Search" onfocus="clearPlaceholder(this)">
+                    <button class="btn btn-outline-dark" type="button" aria-label="Search">
+                      <i class="bi bi-search"></i>
+                      <span class="visually-hidden">Search</span>
+                    </button>
+                  </div>
+                </form>--> 
+                <li class="nav-item">
+                  <a href="/" class="nav-link" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/signin">Sign in</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>    
+      </header>      
+  

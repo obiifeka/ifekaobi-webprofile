@@ -1,0 +1,4 @@
+.breadcrumb-item.active {
+    color: #FF0000; /* Replace with the desired color for active breadcrumb */
+    /* Add any additional styling for the active breadcrumb */
+  }

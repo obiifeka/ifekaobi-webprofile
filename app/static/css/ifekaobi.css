@@ -14,6 +14,16 @@
     background-color: #fff; /* Change the background color to your desired color */
    }
  
+   .nav-icon-link {
+    position: relative;
+  }
+
+  .nav-icon-link.absolute {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
    
    .wrapper {
      min-height: 100%;
@@ -29,59 +39,10 @@
     transition: background-color 0.3s, color 0.3s;
   }
 
-  .custom-card {
-    height: 510px; 
-    border-radius: 20px; /* Adjust the value to control the amount of curvature */
-    overflow: hidden; 
-    background-image: url('/static/assetes/full-shot-man-experiencing-virtual-reality.jpg');
+  /* ====carousel==== */
 
-  }
-
-  .custom-image {
-    height: 350px; }
-    .custom-card {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s;
-    }
-    
-    .custom-card:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    }
-    @keyframes slideIn {
-      from {
-        transform: translateX(-100%);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-    
-    .custom-card {
-      animation: slideIn 0.5s;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s;
-    }
-    
-    .delay-1 {
-      animation-delay: 1s;
-    }
-    
-    .delay-2 {
-      animation-delay: 2s;
-    }
-    
-    .delay-3 {
-      animation-delay: 3s;
-    }
-    
-    
-    .custom-image {
-      transition: transform 0.3s;
-    }
-    
-    .custom-image:hover {
-      transform: scale(0.9);
-    }
+  
+  
 
     .icon-circle {
       display: inline-flex;
@@ -141,12 +102,6 @@
       }
     
     
-      .custom-card.delay-2,
-      .custom-card.delay-3,
-      .custom-card.delay-1 {
-        animation-delay: 0s !important;
-      }
-    
       .col-lg-4.offset-lg-1 {
         margin-left: 0;
       }
@@ -155,10 +110,7 @@
         padding: 0;
       }
     
-      .img-fluid.custom-image {
-        width: 100%;
-        height: auto;
-      }
+      
     
       .container.col-xxl-8 {
         padding: 0;
@@ -218,11 +170,7 @@
         transform: scale(1.05);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       }
-      .custom-card.delay-2,
-      .custom-card.delay-3,
-      .custom-card.delay-1 {
-        animation-delay: 0s !important;
-      }
+   
     
       .col-lg-4.offset-lg-1 {
         margin-left: 0;
@@ -232,10 +180,6 @@
         padding: 0;
       }
     
-      .img-fluid.custom-image {
-        width: 100%;
-        height: auto;
-      }
     
       .container.col-xxl-8 {
         padding: 0;
@@ -252,11 +196,37 @@
       }
     }
 
-    .card-sub {
-      height: 240px; 
-      border-radius: 20px;
+  
+    .carousel-caption {
+      display: none;
     }
-     
-   
+  
+    .carousel-item:hover .carousel-caption {
+      display: block;
+    }
+  
+/* Why choose us */
+.vertical-line {
+  border-left: 1px solid #ccc;
+  padding-left: 20px; /* Add some padding to create space between the line and content */
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-animation:hover {
+  animation: heartbeat 1s infinite;
+}
+
+
+
    
    

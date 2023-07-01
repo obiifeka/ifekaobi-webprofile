@@ -1,0 +1,909 @@
+
+{% include 'base.html' %}
+
+{% block content %}    
+	<div class="main-wrapper">
+
+		<!-- partial:../../partials/_sidebar.html -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <br>
+            <a href="/" class="sidebar-brand"  style="padding: 5px;">
+                <img class="img-fluid"   style="border-radius: 1rem 0 0 1rem;"  width="70" src="/static/assets/images/ficx_logo.png" alt="FICx logo"/>
+            </a>
+            <!--  a href="#" >
+                FIC<span>X</span>
+            </a-->
+            <div class="sidebar-toggler not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="sidebar-body">
+            <ul class="nav">
+                <li class="nav-item nav-category">Main</li>
+                <li class="nav-item">
+                <a href="/profile/dashboard" class="nav-link">
+                    <i class="link-icon" data-feather="user"></i>
+                    <span class="link-title">Profile</span>
+                </a>
+                </li>
+                <li class="nav-item nav-category fw-bold">Application Forms</li>
+                <li class="nav-item">
+                <a href="/profile/personal" class="nav-link">
+                    <i class="link-icon" data-feather="feather"></i>
+                    <span class="link-title">Personal Profile</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/businessdetails" class="nav-link">
+                    <i class="link-icon" data-feather="map"></i>
+                    <span class="link-title">Business details</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/guarantors" class="nav-link">
+                    <i class="link-icon" data-feather="book"></i>
+                    <span class="link-title">Guarantor</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/nextofkin" class="nav-link">
+                    <i class="link-icon" data-feather="user-plus"></i>
+                    <span class="link-title">Next of Kin</span>
+                </a>
+                </li>
+                <li class="nav-item nav-category">Upload Document</li>
+                <li class="nav-item">
+                <a href="/profile/passupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Upload Passport</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/govtidupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Upload Valid Govt Id</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/ninupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Upload NIN</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/utilitybillupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Upload Utility Bill</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/cacupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Upload CAC Document</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/certupload" class="nav-link">
+                    <i class="link-icon" data-feather="share"></i>
+                    <span class="link-title">Proof of Qualification</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/profile/otherupload" class="nav-link">
+                    <i class="link-icon" data-feather="share-2"></i>
+                    <span class="link-title">Other Document</span>
+                </a>
+                </li>
+                <li class="nav-item nav-category">Others</li>
+                <li class="nav-item">
+                <a href="/faqs" class="nav-link">
+                    <i class="link-icon" data-feather="book"></i>
+                    <span class="link-title">Faq</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="/services" class="nav-link">
+                    <i class="link-icon" data-feather="anchor"></i>
+                    <span class="link-title">services</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<!-- partial -->
+	
+	<div class="page-wrapper">
+				
+		<!-- partial:../../partials/_navbar.html -->
+		<nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="sidebar-brand" style="margin-top: 15px; height: 95;">
+                    <img class="img-fluid"   style="border-radius: 1rem 0 0 1rem;"  width="70" src="/static/assets/images/ficx_logo.png" alt="FICx logo"/>
+                </a>
+                <!--  a href="#" >
+                FIC<span>X</span>
+                </a-->
+               
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav" data-bs-spy="scroll">
+                    <li class="nav-item nav-category">Main</li>
+                    <li class="nav-item">
+                        <a href="/profile/dashboard" class="nav-link">
+                        <i class="link-icon" data-feather="user"></i>
+                        <span class="link-title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category fw-bold">Application Forms</li>
+                    <li class="nav-item">
+                        <a href="/profile/personal" class="nav-link">
+                        <i class="link-icon" data-feather="feather"></i>
+                        <span class="link-title">Personal Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/profile/businessdetails" class="nav-link">
+                        <i class="link-icon" data-feather="map"></i>
+                        <span class="link-title">Business details</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/profile/guarantors" class="nav-link">
+                        <i class="link-icon" data-feather="book"></i>
+                        <span class="link-title">Guarantor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/profile/nextofkin" class="nav-link">
+                        <i class="link-icon" data-feather="user-plus"></i>
+                        <span class="link-title">Next of Kin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">Upload Document</li>
+                    <li class="nav-item">
+                    <a href="/profile/passupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Upload Passport</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/govtidupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Upload Valid Govt Id</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/ninupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Upload NIN</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/utilitybillupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Upload Utility Bill</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/cacupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Upload CAC Document</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/certupload" class="nav-link">
+                        <i class="link-icon" data-feather="share"></i>
+                        <span class="link-title">Proof of Qualification</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/profile/otherupload" class="nav-link">
+                        <i class="link-icon" data-feather="share-2"></i>
+                        <span class="link-title">Other Document</span>
+                    </a>
+                    </li>
+                    <li class="nav-item nav-category">Others</li>
+                    <li class="nav-item">
+                    <a href="/faqs" class="nav-link">
+                        <i class="link-icon" data-feather="book"></i>
+                        <span class="link-title">Faq</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/services" class="nav-link">
+                        <i class="link-icon" data-feather="anchor"></i>
+                        <span class="link-title">services</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		<!-- partial -->
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar">
+            <a href="#" class="sidebar-toggler">
+                <i data-feather="menu"></i>
+            </a>
+            <div class="navbar-content">            
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                    <h5 class="modal-title fw-bold" style="letter-spacing: 1px; color: #073101" id="guarantorLabel">
+                        Applicant Profile Data
+                    </h5>
+                </nav>
+            <ul class="navbar-nav">
+                <!--li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="bell"></i>
+                        <div class="indicator">
+                            <div class="circle"></div>
+                        </div>
+                    </a>
+                <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown">
+                    <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
+                        <p>6 New Notifications</p>
+                        <a href="javascript:;" class="text-muted">Clear all</a>
+                    </div>
+                    <div class="p-1">
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                        <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                        </div>
+                        <div class="flex-grow-1 me-2">
+                                                <p>New customer registered</p>
+                                                <p class="tx-12 text-muted">2 sec ago</p>
+                        </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                        <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                                                <i class="icon-sm text-white" data-feather="layers"></i>
+                        </div>
+                        <div class="flex-grow-1 me-2">
+                                                <p>Apps are ready for update</p>
+                                                <p class="tx-12 text-muted">5 hrs ago</p>
+                        </div>	
+                    </a>
+                    </div>
+                                    <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                                        <a href="javascript:;">View all</a>
+                                    </div>
+                                </div>
+                            </li-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="profile">
+                                    </a>
+                                </a>
+                                <div class="dropdown-menu p-0" aria-labelledby="profileDropdown">
+                                    <div class="d-flex flex-column align-items-center border-bottom px-5 py-3">
+                                        
+                                        <div class="mb-3">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="tx-16 fw-bolder">Ifeka Obi</p>
+                                            <p class="tx-12 text-muted">obiifeka5@gmail.com</p>
+                                        </div>
+                                    </div>
+                    <ul class="list-unstyled p-1">
+                    <li class="dropdown-item py-2">
+                        <a href="/profile/dashboard" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="user"></i>
+                        <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-item py-2">
+                        <a href="/profile/personal" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="edit"></i>
+                        <span>Edit Profile</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-item py-2">
+                        <a href="/logout" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="log-out"></i>
+                        <span>Log Out</span>
+                        </a>
+                    </li>
+                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        </nav>
+			<!-- partial -->
+			<div class="page-content"> 
+                
+      <!-- BEGIN: Content -->
+      <div class="content">
+        <!-- BEGIN: Top Bar -->
+        <div class="top-bar -mx-4 px-4 md:mx-0 md:px-0">
+            <!-- BEGIN: Breadcrumb -->
+            <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                <ol class="breadcrumb">                         
+                    <li class="breadcrumb-item"><a href="#">Application</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Applicant Profile</li>
+                </ol>
+            </nav>
+            <!-- END: Breadcrumb -->
+        </div>
+        <!-- END: Top Bar -->
+            <div class="row">
+
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                        Approval Status: 
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        
+                                        
+                                            
+                                                Onboarding Complete
+                                            
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earnings (Monthly) Card Example -->
+                <!--div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-success shadow h-100 py-2">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!- Pending Requests Card Example ->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        <div class="row">
+
+            <!-- Deatils -->
+            <div class="col-xl-8 col-lg-7">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Details Overview</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        
+                        <!--div class="chart-area"-->
+                            <!--canvas id="myAreaChart"></canvas-->
+                        <form action=/profile/dashboard method="post">
+                            <input type="hidden" name="csrf_token" value="ImJlOTM5ODI1MWFiZmQ4OGU1OGEzOTE3YzRkNWUxYmQ3ZjIxY2FhMzYi.ZKAI-Q.ntnzL3javGe9hUEuoRhafB7sOT4"/>
+                            <div class="mb-4 text-start" 
+                                overflow-y: scroll; " ,tabindex="0">
+                                
+
+                                
+                                    <div class="card border-primary" id="centerLocationDetails" >
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="letter-spacing: 1px; color: #073101" > Business Location Details</h5>
+                                            <div class="row g-2 mt-2">
+                                                <div class="col-md-9">
+                                                    
+                                                    <label class="labels">Business Name</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" id="businessname" name="businessname"
+                                                    value="maugab communications" placeholder="Business Name">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">Country</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Nigeria" placeholder="Country">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    
+                                                    <label class="labels">Center Address</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="3 brothers street karu" placeholder="Center Address">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">Postal Code</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="900102" placeholder="Center Address">
+                                                </div>
+                                                
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">Ward</label>
+                                                    <input type="text" readonly class="form-control" value="Karu" placeholder="Ward">
+                                                </div>
+                                                
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">Town</label>
+                                                    <input type="text" readonly class="form-control" value="karu" placeholder="Town">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">LGA</label>
+                                                    <input type="text" readonly required class="form-control" value="Karu" placeholder="LGA">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    
+                                                    <label class="labels">State</label>
+                                                    <input type="text" readonly required class="form-control" value="Nasarawa" placeholder="State">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-success">
+                                        <hr>
+                                    </div>
+                                
+
+                                <div class="card border-success" id="businessOwnerManager">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="letter-spacing: 1px; color: #073101" > Business Owner/Manager</h5>
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-md-2">
+                                                
+                                                <label class="labels">Gender</label>
+                                                <select class="form-select" disabled>
+                                                    <option value="Male">Male</option>
+                                                </select>
+                                                <!--input type="text" readonly required class="form-control" value="Male" placeholder="sex"-->
+                                            </div>
+                                            <div class="col-md-2">
+                                                
+                                                <label class="labels">Title</label>
+                                                <select class="form-select" disabled>
+                                                    <option value="MR">MR</option>
+                                                </select>
+                                                <!--input type="text" readonly required class="form-control" value="MR" placeholder="title"-->
+                                            </div>
+
+                                        </div>
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-md-4">
+                                                <label class="labels">Surname</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="Ifeka" placeholder="surname">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="labels">Firstname</label>
+                                                <input type="text"  readonly required  class="form-control text-capitalize" value="Obi" placeholder="first name" >
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Middlename</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="Jeff" placeholder="middlename">
+                                            </div>
+                                             
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">TIN Number</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="123456789-0008" placeholder="middlename">
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Bank</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="First Bank" placeholder="Bank">
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Bank Account Number</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="3032617691" placeholder="Account Number">
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Date of Birth</label>
+                                                <input type="date" readonly required class="form-control" value="1993-04-23" placeholder="">
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Country of Birth</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="Nigeria" placeholder="">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Highest Level of Edu.</label>
+                                                <input type="text"  readonly required  class="form-control" value="1st Degree" placeholder="Highest Edu." >
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Phonenumber</label>
+                                                <input type="text"  readonly required  class="form-control" value="07018004428" placeholder="Phonenumber" >
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Alternate Phonenumber</label>
+                                                <input type="text" readonly class="form-control" value="07083858969" placeholder="middlename">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Email</label>
+                                                <input type="email" readonly required class="form-control" value="obiifeka5@gmail.com" placeholder="Email">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">State of Origin</label>
+                                                <input type="text" readonly class="form-control text-capitalize" value="Anambra" placeholder="middlename">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">BVN</label>
+                                                <input type="text" readonly required class="form-control" value="22221458877" placeholder="BVN">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">NIN</label>
+                                                <input type="text" readonly required class="form-control" value="88165782064" placeholder="NIN">
+                                            </div>
+                                            <div class="text-success">
+                                                <hr>
+                                            </div>
+                                            <div class="fw-bold">
+                                                Residential
+                                            </div>
+                                            <div class="col-md-12">
+                                                
+                                                <label class="labels">Address</label>
+                                                <input type="text" readonly required class="form-control" value=" No1 Romoke close Karu " placeholder="Address">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">LGA</label>
+                                                <input type="text" readonly class="form-control" value="Karu" placeholder="LGA">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Town</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="Karu" placeholder="Town">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">State</label>
+                                                <input type="text" readonly required class="form-control text-capitalize" value="Nasarawa" placeholder="State">
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Utility Bill Type</label>
+                                                <select class="form-select" disabled>
+                                                    <option value="None">None</option>
+                                                </select>
+                                                <!--label for="specialistutilitybilltype">Utility Bill Type</label-->
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">Govt. Approved ID</label>
+                                                <select class="form-select" disabled>
+                                                    <option value="National Identity Card">National Identity Card</option>
+                                                </select>
+                                                <!--input type="text" readonly required class="form-control" value="" placeholder="ID"-->
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <label class="labels">ID Card Number</label>
+                                                <input type="text" readonly required class="form-control" value="88165782064" placeholder="ID Details">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="text-success">
+                                    <hr>
+                                </div>
+                                    <div class="card border-success" id="centerContactDetails">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="letter-spacing: 1px; color: #073101" > Center Contact Details</h5>
+                                            <div class="row g-2 mt-2">
+                                                <h6 class="test-start fw-bold">Primary Contact</h6>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Lastname</label>
+                                                    <input type="text" readonly class="form-control text-capitalize" value="Ifeka" placeholder="Lastname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Firstname</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Obi" placeholder="Firstname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Middlename</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Jeff" placeholder="Middlename">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label class="labels">Center Address</label>
+                                                    <input type="text" readonly required class="form-control" value="no 1 yanson street" placeholder="Center Address">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Email</label>
+                                                    <input type="text" readonly class="form-control" value="obiifeka5@gmail.com" placeholder="Lastname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Phonenumber</label>
+                                                    <input type="text" readonly required class="form-control" value="07018004428" placeholder="Phonenumber">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Alternate Phonenumber</label>
+                                                    <input type="text" readonly required class="form-control" value="" placeholder="Phonenumber">
+                                                </div>
+                                            </div>
+                                            <div class="row g-2 mt-2">
+                                                <h6 class="test-start fw-bold">Alternate Contact</h6>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Lastname</label>
+                                                    <input type="text" readonly class="form-control" value="Obianagwa" placeholder="Lastname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Firstname</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Ifekachukwu" placeholder="Firstname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Middlename</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Jeff" placeholder="Middlename">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label class="labels">Center Address</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="no 1 yanson street" placeholder="Center Address">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Email</label>
+                                                    <input type="text" readonly class="form-control" value="obiifeka5@gmail.com" placeholder="Lastname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Phonenumber</label>
+                                                    <input type="text" readonly required class="form-control" value="07018004428" placeholder="Phonenumber">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Alternate Phonenumber</label>
+                                                    <input type="text" readonly required class="form-control" value="08146249356" placeholder="Phonenumber">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+
+                                        
+                                
+
+                                
+                                <div class="text-success">
+                                    <hr>
+                                </div>
+                                    <div class="card border-info" id="guarantorDetails">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="letter-spacing: 1px; color: #073101" > Next of Kin Details</h5>
+                                            
+                                            <div class="row g-2 mt-2">
+                                                <div class="col-md-2">
+                                                    <label class="labels">Gender</label>
+                                                    <select class="form-select" disabled>
+                                                        <option value="Female">Female</option>
+                                                    </select>
+                                                    <!--input type="text" readonly required class="form-control" value="Male" placeholder="sex"-->
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="labels">Title</label>
+                                                    <select class="form-select" disabled>
+                                                        <option value="Miss">Miss</option>
+                                                    </select>
+                                                    <!--input type="text" readonly required class="form-control" value="MR" placeholder="title"-->
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row g-2 mt-2">
+                                                <div class="col-md-4">
+                                                    <label class="labels">Lastname</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize text-capitalize" value="David" placeholder="Lastname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Firstname</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Shalom" placeholder="Firstname">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Othernames</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="Chibuzor" placeholder="Middlename">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Next of Kin Phonenumber</label>
+                                                    <input type="text" readonly class="form-control" value="09034225069"  placeholder="Phonenumber">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Alternate Phonenumber</label>
+                                                    <input type="text" readonly class="form-control" value=""  placeholder="Phonenumber">
+                                                </div>
+                                                
+                                                <div class="col-md-4">
+                                                    <label class="labels">Next of Kin Email</label>
+                                                    <input type="email" readonly class="form-control" value="jeff.obi269@gmail.com" placeholder="Email">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label class="labels">Next of Kin Address</label>
+                                                    <input type="text" readonly required class="form-control text-capitalize" value="chivik int. school  karon majiji" placeholder="LGA">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Next of Kin NIN</label>
+                                                    <input type="text" readonly required class="form-control" value="94155650557" placeholder="State">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="labels">Next of Kin BVN</label>
+                                                    <input type="text" readonly required class="form-control" value="22547909130" placeholder="State">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uploads -->
+            <div class="col-xl-4 col-lg-5">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Application Forms Instructions</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <b>NOTE:  <h5 class="modal-title text-info">Please be informed that this application form is best completed on desktop devices rather than mobile devices.</h5></b>  
+
+                        <div class="chart-area">
+                            <ol class="list-group list-group-numbered ">
+                                <li class="list-group-item border-0">Fill in your personal details information by clicking on <b><a href="/profile/personal"> <i class="link-icon" data-feather="feather"></i> &nbsp; Personal Profile &nbsp; </a></b> appearing on the left 
+                                    hand side of your screen under application forms and save</li>
+                                <li class="list-group-item border-0">Fill in your Business details by clicking on<b> <a href="/profile/businessdetails"><i class="link-icon" data-feather="map"></i> &nbsp; Business Details &nbsp;</a></b> appearing on the left 
+                                    hand side of your screen under application forms and save</li>
+                                <li class="list-group-item border-0">Fill in your Guarantor by clicking on <b> <a href="/profile/guarantors"><i class="link-icon" data-feather="book"></i> &nbsp; Guarantor &nbsp; </a></b>appearing on the left 
+                                    hand side of your screen under application forms and save</li>
+                                <li class="list-group-item border-0">Kindly complete the Next of Kin details by clicking on <b> <a href="/profile/nextofkin"> <i class="link-icon" data-feather="user-plus"></i> &nbsp; Next of Kin &nbsp; </a></b>, also appearing on the left 
+                                        hand side of your screen under application forms and save</li>
+                                <li class="list-group-item border-0">Upload documents required by clicking on <b>Upload section</b> appearing on the left 
+                                    hand side of your screen upload Documents and save</li>
+                                <li class="list-group-item border-0">The submitted details will be reviewed and if all requirements needed are met then you can be onboarded</li>
+                                <li class="list-group-item border-0">The onboarding process will be complete within 7 working days after complete documentation.</li>
+                                <br><b>Note:If the details entered are not correct you will not be onboarded on our platform and will be requested to fill in the correct information before we could continue with the onboarding process.
+                                </b>
+                                <li class="list-group-item border-0">
+                                    You will be required to make payment for the services available on the platform
+                                </li>
+                                <li class="list-group-item border-0">You can now log in and access all our services.</li>
+                              </ol>  
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Uploaded Documents</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <div class="chart-area">
+                            <ul class="list-group">
+
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#passportreview" class="list-group-item list-group-item-action"> Passport Photograph </a>
+                                
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#valididreview" class="list-group-item list-group-item-action disabled"> Valid ID </a> 
+                                
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#ninreview" class="list-group-item list-group-item-action disabled"> NIN </a>
+                                
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#cacreview" class="list-group-item list-group-item-action disabled"> CAC </a>
+                                
+                             
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#nepcreview" class="list-group-item list-group-item-action disabled"> Proof of Qualification </a>
+                                
+                            
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#utilityreview" class="list-group-item list-group-item-action disabled"> Utility Bill </a>
+                                
+                                
+                                    <a  data-bs-toggle="modal" data-bs-target="#otherUploadreview" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true"> Others </a>
+                                
+                            </ul>
+                            <canvas id="myPieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(window).on('load', function() {
+                    $('#profileInstruction').modal('show');
+                    });
+            });
+        </script>
+         <!-- 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileInstruction">
+            Profile Form Instruction
+        </button>
+         -->
+    </div>
+    <!-- END: Content -->
+    <!-- Button trigger modal -->
+
+ 
+   <!-- Modal -->
+   <div class="modal fade" id="profileInstruction" tabindex="-1" data-bs-backdrop="static" aria-labelledby="profileInstructionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title fw-bold text-danger" style="letter-spacing: 1px; color: #073101" id="profileInstructionLabel">
+                MUST READ
+            </h5>
+        </div>
+        <div class="modal-body">
+            <b>NOTE:  <h5 class="modal-title text-info">Please be informed that this application form is best completed on desktop devices rather than mobile devices.</h5></b>  
+
+            <ol class="list-group list-group-numbered ">
+                <li class="list-group-item border-0">Kindly complete the personal details information by clicking on <b><a href="/profile/personal"> <i class="link-icon" data-feather="feather"></i> &nbsp; Personal Profile &nbsp; </a></b>, also appearing on the left 
+                    hand side of your screen under application forms and save</li>
+                <li class="list-group-item border-0">Kindly complete the Business details by clicking on <b> <a href="/profile/businessdetails"><i class="link-icon" data-feather="map"></i> &nbsp; Business Details &nbsp;</a></b>, also appearing on the left 
+                    hand side of your screen under application forms and save</li>
+                <li class="list-group-item border-0">Kindly complete the Guarantor by clicking on <b> <a href="/profile/guarantors"><i class="link-icon" data-feather="book"></i> &nbsp; Guarantor &nbsp; </a></b>, alsoappearing on the left 
+                    hand side of your screen under application forms and save</li>
+                <li class="list-group-item border-0">Kindly complete the Next of Kin details by clicking on <b> <a href="/profile/nextofkin"> <i class="link-icon" data-feather="user-plus"></i> &nbsp; Next of Kin &nbsp; </a></b>, also appearing on the left 
+                    hand side of your screen under application forms and save</li>
+                <li class="list-group-item border-0">Upload documents required by clicking on <b>Upload section</b> appearing on the left 
+                    hand side of your screen upload Documents and save</li>
+                <li class="list-group-item border-0">The submitted details will be reviewed and if all requirements needed are met then you can be onboarded</li>
+                <li class="list-group-item border-0">The onboarding process will be complete within 7 working days after complete documentation.</li>
+                <br><b>Note:If the details entered are not correct you will not be onboarded on our platform and will be requested to fill in the correct information before we could continue with the onboarding process.
+                </b>
+                    <li class="list-group-item border-0">You can now log in and access all our services.</li>
+              </ol> 
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!--button type="button" class="btn btn-info" data-bs-dismiss="modal">I have read and understand the instructions.</button-->
+        <a href="/profile/personal" type="button" class="btn btn-info"> Start Personal Profile Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+			</div>
+
+           
+            <!-- partial -->	
+		</div>
+	</div>
+
+    
+    {% endblock content %}

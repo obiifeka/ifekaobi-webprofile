@@ -37,6 +37,13 @@ def props():
         return render_template('props.html')
     return render_template('props.html')
 
+@app.route('/profile/dashboard',methods=['GET','POST'])
+def prodile_dashboard():
+    if request.method=='POST': 
+        # Handle POST Request here
+        return render_template('profile/dashboard.html')
+    return render_template('profile/dashboard.html')
+
 
 
 

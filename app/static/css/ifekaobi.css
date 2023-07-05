@@ -15,7 +15,7 @@
    }
  
    .nav-icon-link {
-    position: relative;
+    position: absolute;
   }
 
   .nav-icon-link.absolute {

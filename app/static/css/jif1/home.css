@@ -1,0 +1,19 @@
+.nav-link {
+    transition: color 0.3s; /* Smooth transition for color change */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .nav-link:hover {
+    color: red; /* Change the color to red on hover */
+    animation: vibrate 0.3s infinite; /* Add a vibration animation on hover */
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-2px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+  }
+  

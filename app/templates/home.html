@@ -1,6 +1,625 @@
-{% include 'base.html' %}
+{% extends 'base.html' %} 
 
-{% block content %}
-<h1>About</h1>
-<p class="lead">This is a simple </p>
-{% endblock %}
+
+{% block content  %}
+
+<main class="container bg-light align-content-center"  >
+
+  <div class="row pb-0 pe-lg-0 align-items-center justify-content-center rounded-3 border shadow-lg bg-light">
+    <div id="myCarousel" class="carousel slide py-3" data-bs-ride="carousel" data-bs-theme="light">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('/static/assetes/images/macbook-pro-.png'); background-size: cover; background-position: center; height: 500px;">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('/static/assetes/images/macbook-pro-.png'); background-size: cover; background-position: center; height: 500px;">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('/static/assetes/images/IPHONE15-3.PNG'); background-size: cover; background-position: center; height: 500px;">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+ 
+    <div class="row pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 border bg-light" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); border-radius: 50px;">
+      <div class="col-lg-12 p-lg-12 pt-lg-3 bg-light">
+        <div class="row justify-content-center py-4">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center heartbeat-animation">
+              <div class="icon-column">
+                <i class="bi bi-lightning bi-5x"></i>
+              </div>
+              <div class="text-column px-3" style="margin-left: 5px;">
+                <h5>Automated Delivery</h5>
+                <p>Our service delivery is swift automated and nothing beats a seamless process..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="d-flex align-items-center heartbeat-animation">
+              <div class="icon-column">
+                <i class="bi bi-percent bi-5x"></i>
+              </div>
+    
+              <div class="text-column px-3" style="margin-left: 5px;">
+                <h5>Discount %</h5>
+                <p>Enjoy massive discount on our platform when you make purchase for your day to day needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center heartbeat-animation">
+              <div class="icon-column">
+                <i class="bi bi-headset bi-5x"></i>
+              </div>
+    
+              <div class="text-column px-3" style="margin-left: 5px;">
+                <h5>24/7 QUALITY SUPPORT</h5>
+                <p>Get in touch via phone, email and live chat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  
+
+
+<div class="row  pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 border shadow-lg bg-light">
+<div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light">
+<div class="row">
+  <div class="col-md-4">
+    <div class="card mb-2 sub-card1 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-text text-start p-3">Laptops</h3>
+        <div class="card-img-container d-flex justify-content-center align-items-center">
+          <img src="/static/assetes/images/mac.png" alt="Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="card sub-card23 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column ">
+        <h3 class="card-text text-start p-3"> Props</h3>
+        <div class="card-img-container d-flex justify-content-center align-items-center">
+          <img src="/static/assetes/images/watch-image2-.png" alt="Image"  class="img-fluid" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card sub-card23 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column ">
+        <h3 class="card-text text-start p-3">Accessories</h3>
+        <div class="card-img-container d-flex justify-content-center align-items-center">
+          <img src="/static/assetes/images/watch-image2-.png" alt="Image"  class="img-fluid" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+    <div class="card sub-card23 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column ">
+        <h3 class="card-text text-start p-3">  Utility Bills  </h3>
+        <div class="card-img-container d-flex justify-content-center align-items-center">
+          <img src="/static/assetes/images/watch-image2-.png" alt="Image"  class="img-fluid" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card sub-card23 mb-2 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column ">
+        <h3 class="card-text text-start p-3">Phones</h3>
+        <div class="card-img-container d-flex">
+          <img src="/static/assetes/images/samsung1pro.png" alt="Image"  class="img-fluid" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+    <div class="card sub-card1 border-0" style="height: 300px;">
+      <div class="card-body d-flex flex-column ">
+        <h3 class="card-text text-start p-3">Games</h3>
+        <div class="card-img-container d-flex justify-content-center align-items-center">
+          <img src="/static/assetes/images/game.png" alt="Image" class="img-fluid" style="display: block; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    
+  </div>
+</div>
+
+<div class="row pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg bg-light">
+  <div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light">
+    <div class="card rounded" style="background: linear-gradient(to right, #b4a305, #9fd116);">
+      <div class="card-content d-flex justify-content-center">
+        <div class="text-container position-md-absolute" style="padding-top: 100px; padding-left: 30px;">
+          <p style="letter-spacing: 2px; color: white;">Coming Soon....</p>
+          <h1 style="color: white;"><strong>IPHONE 15</strong></h1>
+        </div>
+        <div class="image-container position-relative" style="padding-top: 20px;">
+          <img src="/static/assetes/images/IPHONE15-1.png" alt="Image 1" class="img-fluid image-" >
+          <img src="/static/assetes/images/IPHONE15-3.PNG" alt="Image 2" class="img-fluid image-hover">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
+  <div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light">            
+    <div class="line-container">
+    <span class="line-text">
+      <img src="image-url.jpg" alt="Image">
+     PHONES
+    </span>
+    <hr>
+  </div>
+  <div class="bd-example-snippet bd-code-snippet">
+    <div class="bd-example m-0 border-0">
+      <div class="row-wrapper" style="padding: 20px 0;">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 sm-6">
+            <a href="your-link-url">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/images/HP-elite.PNG" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-primary">HP ELITE BOOK 830 G6 X360</p>
+                    <h5>₦350,000.00</h5>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+  
+          <div class="col-md-3 col-sm-6 sm-6">
+            <a href="your-link-url">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 sm-6">
+            <a href="your-link-url">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 sm-6">
+            <a href="your-link-url">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+    
+
+    <div class="bd-example-snippet bd-code-snippet">
+      <div class="bd-example m-0 border-0">
+        <div class="row-wrapper">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 sm-6">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 sm-6">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 sm-6">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+                  <div class="image-container">
+                    <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                    <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-black">Natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 sm-6">
+              <div class="card" style="background-color: #f4f4f7; border: none;">
+                <div class="d-flex flex-column">
+               <div class="image-container">
+                <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                 <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+              </div>
+              <div class="card-body">
+                 <p class="card-text text-black">Natural lead-in to additional content.</p>
+               </div>
+             </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+  
+  
+
+    <div class="row pb-0 pe-lg-0  align-items-center rounded-3 border shadow-lg bg-light">
+      <div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light"> 
+        <div class="row  align-content-center justify-content-center">
+          <div class="col-lg-7 col-md-8 py-2 ">
+            <div class="text-center ">
+              <h2 class="text-primary">Utility<span class="text-primary"> Services</span></h2>
+             
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">    
+          <div class="col-md-3 ">
+            <div class="card delay-3 border-0" style="height: 100%;">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="card-body text-center">
+                  <i class="bi bi-telephone-fill bi-3x" style="color: #0A3BAD;"></i>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color: #0A3BAD;">Cable TV</h5>
+                  <p class="card-text text-black">Don’t miss that TV programme. Subscribe your Cable TV (DSTv, GOTv & Startimes) at the cheapest price. Instant activation!.</p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="buy-airtime.html" class="btn btn-primary">Subscribe Cable TV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="card delay-3 border-0" style="height: 100%;">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="card-body text-center">
+                  <i class="bi bi-telephone-fill bi-3x" style="color: #0A3BAD;"></i>
+                </div>                    
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color: #0A3BAD;">Data</h5>
+                  <p class="card-text text-black">Buy and resell cheap data (+SME) on VTU.ng and make money with us. We offer the cheapest data bundles for all networks..</p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="buy-airtime.html" class="btn btn-primary">Buy Data</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="card delay-3 border-0" style="height: 100%;">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="card-body text-center">
+                  <i class="bi bi-telephone-fill bi-3x" style="color: #0A3BAD;"></i>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color: #0A3BAD;">Airtime</h5>
+                  <p class="card-text text-black">Enjoy as much as 3% discount on airtime purchase on our platform. We offer VTU airtime for MTN, Glo, Airtel, and 9mobile.</p>
+                
+                </div>
+                <div class="card-body text-center">
+                  <a href="buy-airtime.html" class="btn btn-primary">Buy Airtime</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="card delay-3 border-0" style="height: 100%;">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="card-body text-center">
+                  <i class="bi bi-lightning-fill bi-3x" style="color: #0A3BAD;"></i>
+                  <span class="data-icon" data-icon="lightning-fill" style="color: #0A3BAD; font-size: 3rem;"></span>
+                </div>
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color: #0A3BAD;">Electricity</h5>
+                  <p class="card-text text-black">
+                    Pay and get your token instantly via SMS, email, order status and API. AEDC, EKEDC, IBEDC, IKEDC, JED, KAEDCO, KEDCO & PHED etc.</p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="buy-airtime.html" class="btn btn-primary">Buy Elctricity</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+   
+  
+
+
+      <div class="row pb-0 pe-lg-0  align-items-center rounded-3 border shadow-lg bg-light">
+        <div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light">       
+          <div class="row py-3">
+            <div class="col-md-4">
+              <div class="card rounded" style="height: 575px; background: linear-gradient(to bottom, #f3f2f5, #b4a305);">
+                <div class="card-content py-3" style="padding-left: 20px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;">
+                  <p>Laptops</p>
+                  <h4>MACBOOK</h4>
+                  <a href="shop2.html" class="btn btn-primary" style="background-color: #b4a305;">Shop Now</a> 
+                  </div>
+                  <div class="card-content py-3" >
+                  <img src="/static/assetes/images/APPLE1.PNG " alt="Image description" style="width: 100%; height: auto; margin-top: 10px;">
+                </div>
+              </div>
+            </div>
+            
+<div class="col-md-4">
+<div class="card rounded" style="height: 575px; background: linear-gradient(to bottom,  #ffffff,#648cfa );">
+  <div class="card-content py-3" style="padding-left: 20px;">
+    <p>Laptops</p>
+     <h4>HP</h4>                   
+    <a href="shop1.html" class="btn btn-primary" style="background-color: #648cfa;">Shop Now</a>
+      </div> 
+  <div class="card-content py-3">
+    <img src="/static/assetes/images/HP2.PNG " alt="Image description" style="width: 100%; height: auto; margin-top: 10px;">
+</div>               
+</div>
+</div>
+
+           
+<div class="col-md-4">
+<div class="row">
+  <div class="col-md-12 py-2">
+    <div class="card rounded" style="height: 280px; background: linear-gradient(to bottom, #ffffff, #648cfa);">
+      <div class="card-content py-3" style="padding-left: 20px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; position: relative;">
+        <p>Laptops</p>
+        <h4>DELL</h4>
+        <a href="shop3.html" class="btn btn-primary" style="background-color: #648cfa;">Shop Now</a>
+        <img src="/static/assetes/images/DELL2.PNG" alt="Image description" style="width: 100%; height: auto; margin-top: 10px;">
+        <div class="write-up">
+          Dell is a trusted computer manufacturer known for its reliable
+           and innovative products. Their wide range of computers offers 
+           powerful performance, durability, and customer satisfaction. With a focus on quality 
+           craftsmanship and comprehensive support, Dell empowers individuals and businesses
+            with technology solutions that drive success.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+                <div class="col-md-12">
+                  <div class="card rounded"style="height: 280px; background: linear-gradient(to bottom, #ffffff,#b4a305);">
+                  
+                    <div class="card-content py-3" style="padding-right:  20px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;">
+                      <p>Laptops</p>
+                  <h4>ASUS</h4>
+                <a href="shop4.html" class="btn btn-primary " style="background-color:#b4a305;">Shop Now</a>
+                  </div>
+                  <div class="card-content py-3" style=" display: flex;  flex-direction: column; justify-content: flex-end; align-items: flex-end;">
+                    <img src="/static/assetes/images/ASUS.PNG " alt="Image description" style="width: 100%; height: auto; margin-top: 0px;">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="line-container">
+          <span class="line-text">
+            <img src="image-url.jpg" alt="Image">
+           LAPTOPS
+          </span>
+          <hr>
+        </div>
+      
+        
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <div class="row-wrapper">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <div class="row-wrapper">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                        <div class="image-container">
+                          <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                          <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text text-black">Natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 sm-6">
+                    <div class="card" style="background-color: #f4f4f7; border: none;">
+                      <div class="d-flex flex-column">
+                     <div class="image-container">
+                      <img src="/static/assetes/full-shot-man-experiencing-virtual-reality.jpg" alt="Image 1" class="img-fluid main-image">
+                       <img src="/static/assetes/desktop-wallpaper-developer.jpg" alt="Image 2" class="img-fluid hover-image">
+                    </div>
+                    <div class="card-body">
+                       <p class="card-text text-black">Natural lead-in to additional content.</p>
+                     </div>
+                   </div>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+      <br>
+  </main>    
+
+    
+{% endblock content  %}
+    

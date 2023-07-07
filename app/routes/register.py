@@ -1,13 +1,13 @@
 from flask import  render_template,request,redirect,url_for,flash
 from flask  import  Blueprint
 
-from app import db
+
 
 
 main  = Blueprint('main', __name__)
 
-@main.route('/register', methods=['GET', 'POST'])
-def register():
+@main.route('/signup', methods=['GET', 'POST'])
+def signup():
     if request.method == 'POST':
         # Retrieve form data
         email = request.form.get('email')
@@ -18,11 +18,11 @@ def register():
         # Perform form validation
         if not email or not password or not confirm_password or not agree_terms:
             error_message = 'All fields are required.'
-            return render_template('register.html', error_message=error_message)
+            return render_template('signup.html', error_message=error_message)
 
-        if password != confirm_password:
+        if password != confirm_password: 
             error_message = 'Passwords do not match.'
-            return render_template('register.html', error_message=error_message)
+            return render_template('signup.html', error_message=error_message)
 
         # Perform user registration logic
         # Example: Create a new user in the database
@@ -32,9 +32,13 @@ def register():
 
         # Redirect to a success page or login page
         flash('Registration successful. Please log in.')
-        return redirect(url_for('main.login'))
+        return redirect(url_for('profile.dashboard'))
 
-    return render_template('register.html')
+    return render_template('signup.html')
+
+
+
+
 
 # Sign-in section
 @main.route('/signin',methods=['GET','POST'])

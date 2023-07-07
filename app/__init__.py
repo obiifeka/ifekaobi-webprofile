@@ -4,6 +4,7 @@ from .secrets import *
 from  .routes.register import  main
 from  .routes.services import  products
 from  .routes.api import  api
+from  .routes.dashboard import  dashboard 
 
 app = Flask(__name__)
 
@@ -17,12 +18,13 @@ db = SQLAlchemy(app)
 def home():
     if request.method=='POST':
         # Handle POST Request here
-        return render_template('index1.html')
-    return render_template('index1.html')
+        return render_template('home.html')
+    return render_template('home.html')
 
 app.register_blueprint(main)
 app.register_blueprint(products)
 app.register_blueprint(api)
+app.register_blueprint(dashboard)
 
 
 

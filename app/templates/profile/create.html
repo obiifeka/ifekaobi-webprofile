@@ -1,0 +1,105 @@
+{% extends 'profile/Base.html' %}
+
+{% block content %}
+<br>
+<br>
+<main class="container uk-container bg-light uk-flex uk-flex-center uk-flex-middle">
+  <div class="row pb-0 pe-lg-0 align-items-center justify-content-center rounded-3 uk-box-shadow-large bg-light">
+
+    <form method="post" class="needs-validation uk-padding uk-padding-large" uk-padding>
+      <form action="/profile/create" method="POST" name="profile-address-form" class="p-4 p-md-5 border rounded-3 bg-light">
+        <h3 class="mb-4">
+          <a href='{{"address"}}' class="arrow-link">
+            <i class="icon" data-feather="arrow-left"></i>
+          </a>
+          <strong><span style="color: #FF0000;">Billing address</span></strong>
+        </h3>
+        
+        
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="billing_first_name">First name <abbr class="required" title="required"></abbr></label>
+              <input type="text" class="uk-input" name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="billing_last_name">Last name <abbr class="required" title="required"></abbr></label>
+              <input type="text" class="uk-input" name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name" required>
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="billing_company">Company name <span class="optional">(optional)</span></label>
+              <input type="text" class="uk-input" name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization">
+            </div>
+            <div class="col-md-6">
+              <label for="billing_country">Country / Region <abbr class="required" title="required"></abbr></label>
+              <strong>Nigeria</strong>
+              <input type="hidden" name="billing_country" id="billing_country" value="NG" autocomplete="country" class="country_to_state" readonly="readonly">
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="billing_address_1">Street address <abbr class="required" title="required"></abbr></label>
+              <input type="text" class="uk-input" name="billing_address_1" id="billing_address_1" placeholder="House number and street name" value="" autocomplete="address-line1" required>
+            </div>
+            <div class="col-md-6">
+              <label for="billing_address_2">Apartment, suite, unit, etc. <span class="optional">(optional)</span></label>
+              <input type="text" class="uk-input" name="billing_address_2" id="billing_address_2" placeholder="Apartment, suite, unit, etc. (optional)" value="" autocomplete="address-line2">
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="billing_city">Town / City <abbr class="required" title="required"></abbr></label>
+              <input type="text" class="uk-input" name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2" required>
+            </div>
+            <div class="col-md-6">
+              <label for="billing_state">State <abbr class="required" title="required"></abbr></label>
+              <select name="billing_state" id="billing_state" class="uk-select state_select" autocomplete="address-level1" data-placeholder="Select an option&hellip;" data-input-classes="" data-label="State" required>
+                <option value="">Select an option&hellip;</option>
+                <option value="AB">Abia</option>
+                <option value="FC">Abuja</option>
+                <option value="AD">Adamawa</option>
+                <option value="AK">Akwa Ibom</option>
+                <!-- Add more options here -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="billing_postcode">Postcode <span class="optional">(optional)</span></label>
+              <input type="text" class="uk-input" name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code">
+            </div>
+            <div class="col-md-6">
+              <label for="billing_phone">Phone <abbr class="required" title="required"></abbr></label>
+              <input type="tel" class="uk-input" name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel" required>
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="billing_email">Email address <abbr class="required" title="required"></abbr></label>
+              <input type="email" class="uk-input" name="billing_email" id="billing_email" placeholder="" value="senseitech2@gmail.com" autocomplete="email username" required>
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <button type="submit" class="uk-button uk-button-primary">Save address</button>
+          <input type="hidden" id="woocommerce-edit-address-nonce" name="woocommerce-edit-address-nonce" value="f760adca67">
+          <input type="hidden" name="_wp_http_referer" value="/my-account/edit-address/billing/">
+          <input type="hidden" name="action" value="edit_address">
+        </div>
+      </form>
+    </form>
+  </div>
+</main>
+{% endblock content %}

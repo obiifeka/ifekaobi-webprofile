@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row button {
+    margin: 0 5px;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .row button i {
+    font-size: 24px;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .row button:hover i.fas.fa-plus {
+    color: green;
+  }
+
+  .row button:hover i.fas.fa-minus {
+    color: red;
+  }
+  /* cart th
+  thead th {
+    text-align: justify;
+    width: 33.33%;
+  }*/

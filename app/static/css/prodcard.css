@@ -205,3 +205,9 @@
   background-color: rgba(0, 0, 0, 0.7); /* Reduced opacity background color */
   color: white;
 }
+
+
+/* TRash Icon*/
+.trash-icon:hover {
+  color: red;
+}

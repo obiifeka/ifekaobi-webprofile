@@ -28,3 +28,6 @@ function toggleAbsolute() {
   const iconLink = document.querySelector('.nav-icon-link');
   iconLink.classList.toggle('absolute');
 }
+
+/*number button */
+

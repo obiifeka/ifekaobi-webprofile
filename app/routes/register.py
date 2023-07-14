@@ -48,3 +48,18 @@ def signin():
         return render_template('signin.html')
     return render_template('signin.html')
 
+# Catrs section
+@main.route('/carts',methods=['GET','POST'])
+def carts():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('carts.html')
+    return render_template('carts.html')
+
+# Delivery
+@main.route('/onepagecheckout/delivery',methods=['GET','POST'])
+def delivery():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('onepagecheckout/delivery.html')
+    return render_template('onepagecheckout/delivery.html')

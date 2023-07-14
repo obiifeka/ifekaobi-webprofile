@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row pb-0 pe-lg-0  align-items-center rounded-3 border shadow-lg bg-light">
+    <div class="col-lg-12 p-3 p-lg-12 pt-lg-3 bg-light">    
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 align-self-start"> <!-- Added align-self-start class -->
+        <table class="table table-default">
+         <thead>
+          <tr>
+            <th scope="col" class="flex-fill" style="display: flex;">Product</th>
+            <th scope="col" class="flex-fill" style=" justify-content: end;">Quantity</th>
+            <th scope="col" class="flex-fill"  style=" justify-content: flex-end;">Subtotal</th>
+          </tr>
+          
+</thead>
+
+          <tbody>
+            <tr>
+              <td style="vertical-align: middle;">
+                <div class="card mb-3 border-0" style="max-width: 280px;">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                      <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td style="vertical-align: middle;">
+                <div style="display: flex; align-items: center; justify-content: start;">
+                  <button class="small-button" onclick="subtractFromSum(1)"><i class="fas fa-minus" style="font-size: 15px;"></i></button>
+                  <div id="sum" style="font-size: 100%;">0</div>
+                  <button class="small-button" onclick="addToSum(1)"><i class="fas fa-plus" style="font-size: 15px;"></i>
+                  </button>
+                </div>
+              </td>
+              <td  style="vertical-align: middle;">
+                <div >
+                  <span >₦20,000.00</span>
+                  <i style="display: flex; justify-content: flex-end; align-content: flex-end; padding-right: 0px;" class="bi bi-trash-fill trash-icon"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <div  class="d-flex justify-content-end">
+                  <a href="#" class="btn btn-outline-primary">Check Out</a>
+                </div>
+              </td>
+            </tr>
+            
+                      
+          </tbody>
+        </table>
+        
+      </div>
+      
+      
+    <!---->
+    <div class="col-lg-4 align-self-start"> <!-- Added align-self-start class -->
+      <div class="card">
+            <div class="card-header">
+                CART SUMMARY
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        Subtotal:
+                    </div>
+                    <div class="col text-end">
+                        &#8358;99.99 <!-- Replace with your actual subtotal amount -->
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                      Shipping:
+                  </div>
+                  <div class="col text-end">
+                    Free Shipping 
+                  <p> Shipping to <b>Lagos</b></p> 
+                  </div>
+              </div>
+               
+                <hr>
+                <div class="row flex-fill">                
+                 <a href="/onepagecheckout/delivery" class="btn btn-outline-primary">Check Out</a>
+                 </div>             
+            </div>
+        </div>
+   <br>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title ">Returns are Easy</h5>
+          <p class="card-text">Free return within 15 days for Official Store items and 7 days for other eligible items  <a href="#">See more</a></p>
+         
+        </div>
+      </div>
+        <!--col-lg-4 end-->
+    </div>
+      
+    
+    <!-- Row -->
+    </div>
+<!-- Container -->
+</div>
+<!-- Last -->
+    </div>
+</div>
+
+{% endblock content %}
